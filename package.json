@@ -1,0 +1,39 @@
+{
+  "name": "worker-script",
+  "version": "0.1.0",
+  "description": "A simple custom element to execute script in a web worker",
+  "main": "dist/worker-script.js",
+  "module": "dist/worker-script.js",
+  "types": "dist/worker-script.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pshihn/worker-script.git"
+  },
+  "keywords": [
+    "worker",
+    "webworker",
+    "web worker",
+    "web-worker",
+    "webcomponent",
+    "web component",
+    "webcomponents",
+    "customelement",
+    "custom element",
+    "script",
+    "thread"
+  ],
+  "author": "Preet Shihn <preetshihn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pshihn/worker-script/issues"
+  },
+  "homepage": "https://github.com/pshihn/worker-script#readme",
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.3"
+  }
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <title>worker-script demo</title>
+
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+  <script type="module" src="../dist/worker-script.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 10px;
+      font-family: sans-serif;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+  <script is="worker-script" type="worker">
+    function sum(a, b) {
+      return a + b;
+    }
+    console.log('Sum = ', sum(3, 4));
+  </script>
+  <script type="worker" is="worker-script" src="./multiply.js"></script>
+</body>
+
+</html>
